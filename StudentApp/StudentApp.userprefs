@@ -1,0 +1,9 @@
+﻿<Properties StartupConfiguration="{95A2C0F8-305E-4C66-BE91-B62EE8C9DFDB}|">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.StudentApp PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

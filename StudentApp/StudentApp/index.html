@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Product App</title>
+</head>
+<body>
+
+  <div>
+    <h2>All Products</h2>
+    <ul id="student" />
+  </div>
+  <div>
+    <h2>Search by ID</h2>
+     <input type="button" value="Get All" onclick="getall();" />
+    <input type=number id="prodId" size="5" />
+    <input type="text" id="prodName" size="5" />
+      
+      <input type="button" value="Submit" onclick="find();" />
+    <p id="student" />
+  </div>
+
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+  <script>
+    var uri = 'api/student';
+
+
+    function getall() {
+        $.getJSON(uri)
+          .done(function (data) {
+              // On success, 'data' contains a list of products.
+              $.each(data, function (key, item) {
+                  // Add a list item for the product.
+                  $('<li>', { text: formatItem(item) }).appendTo($('#student'));
+              });
+          });
+
+    }
+
+
+
+    /*$(document).ready(function () {
+        $("Post").click(function () {
+            $.post(uri,
+            {
+                Name: $('#prodName').val(),
+                Id: $('#prodId').val()
+            },
+            function (data, status) {
+                alert("Data: " + data + "\nStatus: " + status);
+            });
+        });
+    });*/
+
+
+
+    function formatItem(item) {
+      return item.Name;
+    }
+
+    function find() {
+        var name = $('#prodName').val();
+        var id = $('#prodId').val();
+        $.post(uri,
+            {
+                Name: name,
+                Id: id
+
+            },
+        function (data, status) {
+            alert("Data: " + name + "\nStatus: " + status);
+        });
+     
+    }
+  </script>
+   
+</body>
+</html>

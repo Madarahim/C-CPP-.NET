@@ -1,0 +1,17 @@
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/obj/Debug/.NETFramework,Version=v4.5.2.AssemblyAttribute.cs
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/obj/Debug/StudentApp.dll
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/obj/Debug/StudentApp.pdb
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/bin/EntityFramework.dll
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/bin/EntityFramework.SqlServer.dll
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/bin/Microsoft.AI.Agent.Intercept.dll
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/bin/Microsoft.AI.DependencyCollector.dll
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/bin/Microsoft.AI.PerfCounterCollector.dll
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/bin/Microsoft.AI.ServerTelemetryChannel.dll
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/bin/Microsoft.AI.Web.dll
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/bin/Microsoft.AI.WindowsServer.dll
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/bin/Microsoft.ApplicationInsights.dll
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/bin/Newtonsoft.Json.dll
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/bin/System.Net.Http.Formatting.dll
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/bin/System.Web.Http.dll
+/Users/abdulrahim/Downloads/StudentApp/StudentApp/bin/System.Web.Http.WebHost.dll
