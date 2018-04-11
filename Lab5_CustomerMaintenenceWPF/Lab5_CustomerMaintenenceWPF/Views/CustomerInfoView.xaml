@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="Lab5_CustomerMaintenenceWPF.Views.CustomerInfoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Lab5_CustomerMaintenenceWPF.Views"
+             mc:Ignorable="d" 
+             Height="350" Width="525">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  />
+            <ColumnDefinition  />
+        </Grid.ColumnDefinitions>
+
+        <!-- Define Rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition/>
+            <RowDefinition />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!-- View report button -->
+        <Button Command="{Binding ExitClickCommand}" CommandParameter="Exit" Grid.Column="1" Grid.Row="5" Margin="140,15,21,10" >Exit
+        </Button>
+        <Button Command="{Binding DeleteClickCommand}" CommandParameter="Delete" Grid.Column="1" Grid.Row="5"  Margin="21,15,140,10" >Delete
+        </Button>
+        <Button Command="{Binding ModifyClickCommand}" CommandParameter="Modify" Grid.Row="5"  Margin="138,15,22,10" >Modify
+        </Button>
+        <Button  Command="{Binding AddClickCommand}" CommandParameter="Add" Grid.Row="5"  Margin="21,15,139,10" >Add
+        </Button>
+        <Button  Command="{Binding GetCustomerClickCommand}" CommandParameter="GetCustomer" Margin="64,10,111,13" Grid.Column="1" >Get Customer
+        </Button>
+
+        <TextBlock Text="Customer ID" Margin="10,10,83,17" FontSize="27" FontFamily="Berlin Sans FB Bold" >
+        </TextBlock>
+        <TextBox  x:Name="GetCustomerButton" Text="{Binding CustomerIDNotify, Mode=TwoWay}" Margin="180,12,0,13">
+        </TextBox>
+
+  
+
+
+                <TextBlock Text="Name"   FontSize="27" Margin="31,10,150,13" Grid.Row="1" FontFamily="Berlin Sans FB Bold">
+        </TextBlock>
+        <TextBox  Text="{Binding NameNotify, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"  Margin="138,10,43,10" Grid.ColumnSpan="2" Grid.Row="1" >
+        </TextBox>
+
+        <TextBlock Text="Address" FontSize="27" Grid.Row="2" Margin="10,10,139,10" FontFamily="Berlin Sans FB Bold">
+        </TextBlock>
+        <TextBox Text="{Binding AddressNotify, Mode=OneWay}" IsReadOnly="True" Margin="138,10,43,10" Grid.Row="2" Grid.ColumnSpan="2">
+        </TextBox>
+
+        <TextBlock Text="City" FontSize="27" FontFamily="Berlin Sans FB Bold" Margin="33,10,162,13" Grid.Row="3">
+        </TextBlock>
+        <TextBox Text="{Binding CityNotify, Mode=OneWay}" IsReadOnly="True" Grid.ColumnSpan="2" Margin="138,10,43,10" Grid.Row="3">
+        </TextBox>
+
+        <TextBlock Text="State" FontSize="27" FontFamily="Berlin Sans FB Bold" Margin="33,11,150,9" Grid.Row="4">
+        </TextBlock>
+        <TextBox  Text="{Binding StateNotify, Mode=OneWay}" IsReadOnly="True" Margin="113,11,35,9" Grid.Row="4">
+        </TextBox>
+
+        <TextBlock Text="Zip Code" FontSize="27" FontFamily="Berlin Sans FB Bold" Grid.Column="1" Margin="0,11,140,10" Grid.Row="4">
+        </TextBlock>
+        <TextBox  Text="{Binding ZipCodeNotify, Mode=OneWay}" IsReadOnly="True" Grid.Column="1" Margin="127,10,31,10" Grid.Row="4">
+        </TextBox> 
+    </Grid>
+</UserControl>
