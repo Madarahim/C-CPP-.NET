@@ -1,0 +1,3 @@
+
+const double FACULTY_MONTHLY_SALARY = 5000.00;
+const double STAFF_MONTHLY_HOURS_WORKED = 160;
